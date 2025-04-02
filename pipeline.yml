@@ -3,7 +3,7 @@ steps:
     plugins:
       - docker#v3.9.0:
           image: ubuntu
-          env:
+          environment:
             - MY_USER = "JohnDoe"
             - MY_PASSWORD = "Welcome@123"
     command: echo $MY_USER $MY_PASSWORD

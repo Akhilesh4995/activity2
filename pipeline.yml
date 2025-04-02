@@ -6,5 +6,5 @@ steps:
           image: ubuntu
           user: root
           env:
-            - USER
-            - PASSWORD
+            - USER : "JohnDoe"
+            - PASSWORD : "Welcome@123"

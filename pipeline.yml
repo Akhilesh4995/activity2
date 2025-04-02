@@ -4,6 +4,6 @@ steps:
       - docker#v3.9.0:
           image: ubuntu
           environment:
-            - USER = "JohnDoe"
-            - PASSWORD = "Welcome@123"
-    command: echo $USER $PASSWORD
+            - MY_USER = "JohnDoe"
+            - MY_PASSWORD = "Welcome@123"
+    command: echo $MY_USER $MY_PASSWORD

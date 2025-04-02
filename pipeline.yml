@@ -7,3 +7,4 @@ steps:
             - USER = "JohnDoe"
             - PASSWORD = "Welcome@123"
     command: echo $USER $PASSWORD
+             env | grep -E "USER|PASSWORD"

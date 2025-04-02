@@ -5,6 +5,6 @@ steps:
           image: ubuntu
           user: root
           env:
-            - USER : "JohnDoe"
-            - PASSWORD : "Welcome@123"
+            - USER
+            - PASSWORD
     command: echo $USER $PASSWORD

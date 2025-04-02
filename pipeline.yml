@@ -7,4 +7,4 @@ steps:
           env:
             - USER
             - PASSWORD
-    command: echo $USER $PASSWORD
+    command: echo $(buildkite-agent secret get USER) $(buildkite-agent secret get PASSWORD)

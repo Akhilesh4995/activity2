@@ -3,8 +3,7 @@ steps:
     plugins:
       - docker#v3.9.0:
           image: ubuntu
-          user: root
-          env:
-            - USER
-            - PASSWORD
-    command: echo $(buildkite-agent secret get USER) $(buildkite-agent secret get PASSWORD)
+          environment:
+            - USER = "JohnDoe"
+            - PASSWORD = "Welcome@123"
+    command: echo $USER $PASSWORD
